@@ -121,8 +121,8 @@ def main():
         edit_value = st.sidebar.selectbox("Enter New Priority:", ["Low", "Medium", "High"], index=0)
     elif field_to_edit == "Start Time":
         edit_value = st.sidebar.time_input("Enter New Start Time:", value=None)
-    elif field_to_edit == "End Time":
-        edit_value = st.sidebar.time_input("Enter New End Time:", value=None)
+    elif field_to_edit == "Finish Time":
+        edit_value = st.sidebar.time_input("Enter New Finish Time:", value=None)
 
     if st.sidebar.button("Edit"):
         if tasks_list.edit_task(task_to_edit_number, field_to_edit, edit_value):
